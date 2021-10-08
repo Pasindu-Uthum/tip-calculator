@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #c5e4e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+body .attribute {
+  font-size: 1rem;
+  padding-top: 50px;
+}
+
+body .attribute a:link {
+  color: #3e52a3;
+  font-weight: 700;
+}
+
+body .attribute a:visited {
+  color: #001157;
+  font-weight: 700;
+}
+
+body main {
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  border-radius: 30px;
+  padding: 50px;
+}
+
+body main .input-section {
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding-right: 50px;
+}
+
+body main .input-section label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #5e7a7d;
+  padding-bottom: 5px;
+}
+
+body main .input-section label span {
+  float: right;
+  font-size: 0.9rem;
+  color: tomato;
+  display: none;
+}
+
+body main .input-section input {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  font-size: 1.1rem;
+  color: #00494d;
+  font-weight: 700;
+  border: 3px solid grey;
+  outline: none;
+}
+
+body main .input-section input:hover {
+  border: 3px solid #26c0ab;
+}
+
+body main .input-section p {
+  display: block;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #5e7a7d;
+  padding-top: 30px;
+}
+
+body main .input-section p span {
+  float: right;
+  font-size: 0.9rem;
+  color: tomato;
+  display: none;
+}
+
+body main .input-section .tip-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+body main .input-section .tip-container .tip-padding {
+  -webkit-box-flex: 33.33%;
+      -ms-flex: 33.33%;
+          flex: 33.33%;
+  min-width: 33.33%;
+  height: 4em;
+  padding: 5px;
+}
+
+body main .input-section .tip-container .tip-padding .tip {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #00494d;
+  color: white;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+body main .input-section .tip-container .tip-padding .tip:hover {
+  background-color: #26c0ab;
+  color: black;
+}
+
+body main .input-section .tip-container .tip-padding .custom-tip {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+body main .input-section #btn {
+  display: none;
+}
+
+body main .display-section {
+  width: 50%;
+  height: 100%;
+  float: left;
+  border-radius: 30px;
+  background-color: #00494d;
+  padding: 50px 30px;
+}
+
+body main .display-section .results {
+  padding-bottom: 100px;
+}
+
+body main .display-section .results .description {
+  width: 50%;
+  float: left;
+  color: white;
+}
+
+body main .display-section .results .description h4 {
+  font-size: 1.2rem;
+}
+
+body main .display-section .results .description p {
+  color: #7f9c9f;
+}
+
+body main .display-section .results .output {
+  width: 50%;
+  float: left;
+  text-align: right;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #26c0ab;
+}
+
+body main .display-section button {
+  margin-top: 50px;
+  display: block;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: none;
+  width: 100%;
+  background-color: #5e7a7d;
+  color: #00494d;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+body main .display-section button:hover {
+  background-color: #26c0ab;
+}
+
+@media screen and (max-width: 1355px) {
+  body main {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1259px) {
+  body main .display-section .results .description {
+    width: 40%;
+  }
+  body main .display-section .results .output {
+    width: 60%;
+  }
+  body main .display-section button {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1027px) {
+  body main {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1095px) {
+  body main .display-section {
+    padding-top: 30px;
+  }
+  body main .display-section .results {
+    padding-bottom: 150px;
+  }
+  body main .display-section .results .description {
+    width: 100%;
+    text-align: center;
+  }
+  body main .display-section .results .output {
+    width: 100%;
+    text-align: center;
+  }
+  body main .display-section button {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  body main {
+    height: auto;
+  }
+  body main .input-section {
+    width: 100%;
+    float: unset;
+    height: auto;
+    padding: 0;
+  }
+  body main .display-section {
+    width: 100%;
+    height: auto;
+    float: unset;
+    margin-top: 30px;
+    border-radius: 30px;
+    background-color: #00494d;
+    padding: 50px 30px;
+  }
+  body main .display-section .results {
+    padding-bottom: 100px;
+  }
+  body main .display-section .results .description {
+    width: 50%;
+    float: left;
+    text-align: left;
+    color: white;
+  }
+  body main .display-section .results .description h4 {
+    font-size: 1.2rem;
+  }
+  body main .display-section .results .description p {
+    color: #7f9c9f;
+  }
+  body main .display-section .results .output {
+    width: 50%;
+    float: left;
+    text-align: right;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #26c0ab;
+  }
+  body main .display-section button {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 621px) {
+  body main .display-section {
+    padding-top: 30px;
+  }
+  body main .display-section .results {
+    padding-bottom: 150px;
+  }
+  body main .display-section .results .description {
+    width: 100%;
+    text-align: center;
+  }
+  body main .display-section .results .output {
+    width: 100%;
+    text-align: center;
+  }
+  body main .display-section button {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+  .attribute {
+    font-size: 1rem;
+    padding-top: 50px;
+    a:link {
+      color: hsl(228, 45%, 44%);
+      font-weight: 700;
+    }
+    a:visited {
+      color: hsl(228, 100%, 17%);
+      font-weight: 700;
+    }
+  }
+  main {
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 50px;
+    .input-section {
+      width: 50%;
+      height: 100%;
+      float: left;
+      padding-right: 50px;
+      label {
+        display: block;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: hsl(186, 14%, 43%);
+        padding-bottom: 5px;
+        span {
+          float: right;
+          font-size: 0.9rem;
+          color: tomato;
+          display: none;
+        }
+      }
+      input {
+        width: 100%;
+        display: block;
+        padding: 10px;
+        font-size: 1.1rem;
+        color: hsl(183, 100%, 15%);
+        font-weight: 700;
+        border: 3px solid grey;
+        outline: none;
+        &:hover {
+          border: 3px solid hsl(172, 67%, 45%);
+        }
+      }
+      p {
+        display: block;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: hsl(186, 14%, 43%);
+        padding-top: 30px;
+        span {
+          float: right;
+          font-size: 0.9rem;
+          color: tomato;
+          display: none;
+        }
+      }
+      .tip-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+        .tip-padding {
+          flex: 33.33%;
+          min-width: 33.33%;
+          height: 4em;
+          padding: 5px;
+          .tip {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background-color: hsl(183, 100%, 15%);
+            color: white;
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            &:hover {
+              background-color: hsl(172, 67%, 45%);
+              color: black;
+            }
+          }
+          .custom-tip {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+      }
+      #btn {
+        display: none;
+      }
+    }
+    .display-section {
+      width: 50%;
+      height: 100%;
+      float: left;
+      border-radius: 30px;
+      background-color: hsl(183, 100%, 15%);
+      padding: 50px 30px;
+      .results {
+        padding-bottom: 100px;
+        .description {
+          width: 50%;
+          float: left;
+          color: white;
+          h4 {
+            font-size: 1.2rem;
+          }
+          p {
+            color: hsl(184, 14%, 56%);
+          }
+        }
+        .output {
+          width: 50%;
+          float: left;
+          text-align: right;
+          font-size: 2.5rem;
+          font-weight: 700;
+          color: hsl(172, 67%, 45%);
+        }
+      }
+      button {
+        margin-top: 50px;
+        display: block;
+        padding: 10px;
+        font-size: 1.5rem;
+        border: none;
+        width: 100%;
+        background-color: hsl(186, 14%, 43%);
+        color: hsl(183, 100%, 15%);
+        cursor: pointer;
+        font-weight: 700;
+        &:hover {
+          background-color: hsl(172, 67%, 45%);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1355px) {
+  body {
+    main {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 1259px) {
+  body {
+    main {
+      .display-section {
+        .results {
+          .description {
+            width: 40%;
+          }
+          .output {
+            width: 60%;
+          }
+        }
+        button {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1027px) {
+  body {
+    main {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 1095px) {
+  body {
+    main {
+      .display-section {
+        padding-top: 30px;
+        .results {
+          padding-bottom: 150px;
+          .description {
+            width: 100%;
+            text-align: center;
+          }
+          .output {
+            width: 100%;
+            text-align: center;
+          }
+        }
+        button {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 845px) {
+  body {
+    main {
+      height: auto;
+      .input-section {
+        width: 100%;
+        float: unset;
+        height: auto;
+        padding: 0;
+      }
+      .display-section {
+        width: 100%;
+        height: auto;
+        float: unset;
+        margin-top: 30px;
+        border-radius: 30px;
+        background-color: hsl(183, 100%, 15%);
+        padding: 50px 30px;
+        .results {
+          padding-bottom: 100px;
+          .description {
+            width: 50%;
+            float: left;
+            text-align: left;
+            color: white;
+            h4 {
+              font-size: 1.2rem;
+            }
+            p {
+              color: hsl(184, 14%, 56%);
+            }
+          }
+          .output {
+            width: 50%;
+            float: left;
+            text-align: right;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: hsl(172, 67%, 45%);
+          }
+        }
+        button {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 621px) {
+  body {
+    main {
+      .display-section {
+        padding-top: 30px;
+        .results {
+          padding-bottom: 150px;
+          .description {
+            width: 100%;
+            text-align: center;
+          }
+          .output {
+            width: 100%;
+            text-align: center;
+          }
+        }
+        button {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
