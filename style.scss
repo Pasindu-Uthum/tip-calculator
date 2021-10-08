@@ -65,8 +65,19 @@ body {
         font-weight: 700;
         border: 3px solid grey;
         outline: none;
+        text-align: right;
+        &::placeholder {
+          text-align: left;
+        }
         &:hover {
           border: 3px solid hsl(172, 67%, 45%);
+        }
+      }
+      .custom-tip {
+        text-align: center;
+        &::placeholder {
+          text-align: center;
+          font-size: 1.2rem;
         }
       }
       p {

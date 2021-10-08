@@ -86,10 +86,51 @@ body main .input-section input {
   font-weight: 700;
   border: 3px solid grey;
   outline: none;
+  text-align: right;
+}
+
+body main .input-section input::-webkit-input-placeholder {
+  text-align: left;
+}
+
+body main .input-section input:-ms-input-placeholder {
+  text-align: left;
+}
+
+body main .input-section input::-ms-input-placeholder {
+  text-align: left;
+}
+
+body main .input-section input::placeholder {
+  text-align: left;
 }
 
 body main .input-section input:hover {
   border: 3px solid #26c0ab;
+}
+
+body main .input-section .custom-tip {
+  text-align: center;
+}
+
+body main .input-section .custom-tip::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+body main .input-section .custom-tip:-ms-input-placeholder {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+body main .input-section .custom-tip::-ms-input-placeholder {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+body main .input-section .custom-tip::placeholder {
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 body main .input-section p {
